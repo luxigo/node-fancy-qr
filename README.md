@@ -18,7 +18,11 @@ fancyQR.save(__dirname + '/out.png', 'hello world!', {
 	r: 237,
 	g: 127,
 	b: 38,
-	logoPath: __dirname + '/logo.png'
+	logoPath: __dirname + '/logo.png',
+	QRCode: {
+		errorCorrectionLevel: 'H',
+		width: 140
+	}
 }, function(err) {
 	//do something here
 });
@@ -39,4 +43,4 @@ Options can have the following fields:
 * r: red color of the qr output (logo unaffected) [0-255]
 * g: green color [0-255]
 * b: blue color [0-255]
-* logoPath: path of the logo, recommended 30 x 30 or smaller
+* logoPath: path of the logo, recommended ~20% or smaller
