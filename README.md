@@ -19,9 +19,10 @@ fancyQR.save(__dirname + '/out.png', 'hello world!', {
 	g: 127,
 	b: 38,
 	logoPath: __dirname + '/logo.png',
+  logoResize: true,
 	QRCode: {
 		errorCorrectionLevel: 'H',
-		width: 140
+		width: 512
 	}
 }, function(err) {
 	//do something here
